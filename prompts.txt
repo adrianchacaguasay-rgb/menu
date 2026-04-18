@@ -1,0 +1,9 @@
+<promt1> <Añade en este archivo mi nombre junto con un nickname. Opcionalmente, incluye un logo personal>
+<promt2> <Incorpora texto en la página que indique KRAKE DEV (INTRODUCCION A LA PROGRAMACION) además añade una descripción de los proyectos. 
+para cazando ¨Juego interactivo, en html, js y css, diviertete atrapando la comida" agrega algo mas 
+para limones " Juego divertido en html, jd y css, atrapa lo limones y haz una deliciosa limonada" agrega algo mas>
+<promt3> <agrega el logo de Kakre dev arriba realiza un contenedor para los proyectos, agrega imagen de cada uno, de igual manera pon debajo html js y css en letras blancas en un cajon, 
+de ambos proyectos los vas a poner en recuadros iluminados>
+<promt4> separa el html del css
+<promt5> une ambos logos, cambia la paleta de colores a unos más acorde según tu criterio y en base a mis gustos de tus datos,
+ agrega lo que suguieres (particulas subiendo) 

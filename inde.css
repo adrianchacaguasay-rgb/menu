@@ -1,0 +1,180 @@
+/* ===== BASE ===== */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: radial-gradient(circle at top, #111827, #020617);
+    color: #e6edf3;
+    text-align: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ===== MARCA DE AGUA (KRake MÁS PEQUEÑO) ===== */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url("krake.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    opacity: 0.05;
+    z-index: 0;
+}
+
+/* ❌ ELIMINA COMPLETAMENTE body::after */
+
+/* ===== PARTÍCULAS ===== */
+.particles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* 🔥 AHORA ENCIMA */
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.particles span {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: #00ffaa;
+    border-radius: 50%;
+    opacity: 0.6; /* 🔥 más visible */
+    animation: float 12s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) translateX(0);
+    }
+    100% {
+        transform: translateY(-10vh) translateX(40px);
+    }
+}
+
+/* ===== CONTENIDO ===== */
+header, .contenedor, footer {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ===== HEADER ===== */
+header {
+    padding: 40px 20px 10px;
+}
+
+header img {
+    width: 90px;
+}
+
+/* Logo personal */
+.logo {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 10px;
+    box-shadow: 0 0 25px rgba(0,255,170,0.2);
+}
+
+h1 {
+    margin: 15px 0 5px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.autor {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ===== CONTENEDOR ===== */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+/* ===== TARJETAS ===== */
+.card {
+    background: rgba(15,23,42,0.75);
+    backdrop-filter: blur(10px);
+    width: 300px;
+    border-radius: 12px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border: 1px solid rgba(0,255,170,0.4);
+    box-shadow: 0 0 25px rgba(0,255,170,0.15);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #cbd5f5;
+}
+
+/* ===== TECNOLOGÍAS ===== */
+.tecnologias {
+    margin-top: 12px;
+}
+
+.tech-box {
+    display: inline-block;
+    background: rgba(0,255,170,0.08);
+    color: #00ffaa;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid rgba(0,255,170,0.2);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    margin: 30px 20px;
+    font-size: 13px;
+    color: #94a3b8;
+}
+/* CONTENEDOR DE LOGOS */
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Logo Krake (más pequeño y elegante) */
+.krake-logo {
+    width: 70px;
+    opacity: 0.9;
+}
+
+/* Tu logo (protagonista) */
+.logo {
+    width: 110px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,255,170,0.3);
+}
